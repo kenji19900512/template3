@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+.arrow {
+    display: block;
+    width: 60px;
+    height: 10px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+}
+
+
+
+/* ナビゲーション */
+
+
+
+.navi__list-sub .book::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/book.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navi__list-sub .people::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/people.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navi__list-sub .mail::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/mail.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navi__list-sub .earth::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/earth.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/* ソリューション */
+
+.solution__list .list__item li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+    top: 45%;
+    right: 20px;
+}
+
+
+/* ニュース */
+
+
+.date__area .open1::after,
+ .open4::after, 
+ .open5::after {
+    content:"";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/open.png);
+    background-size: contain;
+    vertical-align: text-top;
+    margin-left: 10px;
+}
+
+
+.news__btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__btn li {
+    width: calc(100% / 3 - 60px);
+    background-color: #fff;
+    padding: 30px;
+    margin: 5px;
+    font-size: 0.875rem;
+    border: 1px solid #2b2a27;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* フッター */
+
+
+.footer__inner .map1::after {
+    content: "(lorem.)";
+    width: 200px;
+    height: 10px;
+    display: block;
+    font-size: 0.825rem;
+}
+
+.footer__link li a span {
+    border-right: 1px solid #ccc;
+    margin-left: 20px;
+    line-height: 1;
+}
+
+
